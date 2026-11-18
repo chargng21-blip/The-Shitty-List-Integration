@@ -1,0 +1,22 @@
+name: Build TSL Integration (Windows)
+on:
+  workflow_dispatch:
+  push:
+    branches: ['**']
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Geode mod
+        uses: geode-sdk/build-geode-mod@main
+        id: build
+        with:
+          target: Win64
+          sdk: given
+      - name: Publish downloadable .geode artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TSL-Integration-Windows
+          path: ${{ steps.build.outputs.build-output }}
