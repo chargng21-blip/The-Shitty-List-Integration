@@ -8,6 +8,7 @@ struct Level {
     int rank = 0;
     std::string name;
     std::string creator;
+    int id = 0; // Optional GD level ID when positively identified from site metadata
 };
 
 // Extracts level cards from the publicly rendered TSL v3 list HTML.

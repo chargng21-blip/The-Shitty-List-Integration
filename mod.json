@@ -1,11 +1,19 @@
 {
     "geode": "5.11.2",
-    "gd": { "win": "2.2081" },
+    "gd": {
+        "win": "2.2081"
+    },
     "id": "folk.tsl_integration",
     "name": "TSL Integration",
-    "version": "v0.1.0",
+    "version": "v0.2.0",
     "developer": "Folk",
-    "description": "A custom in-game browser for The Shitty List and The Shitty List Plus. Dark TSL-inspired UI, two tabs, search and live page refresh.",
-    "tags": ["interface", "online", "content"],
-    "links": { "homepage": "https://tsl.pages.dev/list/tsl" }
+    "description": "TSL and TSL+ in Geometry Dash level search: themed UI, live rankings, and native playable level search.",
+    "tags": [
+        "interface",
+        "online",
+        "content"
+    ],
+    "links": {
+        "homepage": "https://tsl.pages.dev/list/tsl"
+    }
 }
